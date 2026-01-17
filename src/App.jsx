@@ -5,7 +5,7 @@ import Introduction from "./components/Introduction";
 import Dashboard from "./components/Dashboard";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
-import Projects from "./components/projects";
+import Projects from "./components/Projects";
 import Education from "./components/Education";
 import { motion, AnimatePresence } from "framer-motion";
 import Acheivements from "./components/Acheivements";
