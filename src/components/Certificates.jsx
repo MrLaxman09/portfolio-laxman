@@ -56,16 +56,17 @@ const Certificates = () => {
           {certificates.map((cert, idx) => (
             <div key={cert.id} className="relative group">
               {/* animated gradient border */}
-              <div className="absolute -inset-0.5 w-1 h-5 rounded-2xl bg-[conic-gradient(from_180deg,rgba(128,0,255,1),rgba(255,0,102,1),rgba(0,0,0,1),rgba(255,0,102,1),rgba(128,0,255,1))]
-             opacity-70 blur-[1px] group-hover:opacity-100 transition duration-300 animate-[spin_0.5s_linear_infinite]" />
+              {/* <div className="absolute -inset-0.5 w-1 h-5 rounded-2xl bg-[conic-gradient(from_180deg,rgba(128,0,255,1),rgba(255,0,102,1),rgba(0,0,0,1),rgba(255,0,102,1),rgba(128,0,255,1))]
+             opacity-70 blur-[1px] group-hover:opacity-100 transition duration-300 animate-[spin_0.5s_linear_infinite]" /> */}
               
-              <div className="absolute w-1 h-10 -inset-0.5 rounded-2xl bg-[conic-gradient(from_0deg,rgba(34,211,238,1),rgba(59,130,246,1),rgba(34,211,238,1))] animate-[spin_0.3s_linear_infinite]" />
+              {/* <div className="absolute w-1 h-10 -inset-0.5 rounded-2xl bg-[conic-gradient(from_0deg,rgba(34,211,238,1),rgba(59,130,246,1),rgba(34,211,238,1))] animate-[spin_0.3s_linear_infinite]" /> */}
 
                 {/* inner mask so ring looks like border only */}
-                <div className="absolute w-1 inset-0.5 rounded-2xl bg-red-900 border border-white/10" />
+                {/* <div className="absolute w-1 inset-0.5 rounded-2xl bg-red-900 border border-white/10" /> */}
 
               <div className="relative rounded-xl overflow-hidden bg-slate-900 border border-white/10 shadow-xl">
                 <button
+                key={idx}
                   onClick={() => openModal(cert)}
                   className="relative w-full text-left"
                 >

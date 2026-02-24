@@ -76,7 +76,7 @@ const iconMap = {
 
 const Skills = () => {
   return (
-    <section className="relative py-12 px-4 md:px-16 text-white overflow-hidden">
+    <section className="relative py-12 px-4 md:px-16 text-white bg-black overflow-hidden">
       <div className="absolute -top-32 -left-32 w-105 h-105 bg-cyan-500/15 blur-3xl rounded-full" />
       <div className="absolute -bottom-32 -right-32 w-105 h-105 bg-blue-500/10 blur-3xl rounded-full" />
 

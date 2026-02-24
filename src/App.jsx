@@ -7,7 +7,7 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
-import { motion, AnimatePresence } from "framer-motion";
+import {motion, AnimatePresence } from "framer-motion";
 import Acheivements from "./components/Acheivements";
 import Certificates from "./components/Certificates";
 
@@ -28,25 +28,25 @@ function App() {
 
   return (
     <>
-      <div className="flex w-screen h-[93vh] md:h-screen  bg-gray-800 text-gray-300 overflow-hidden">
+      <div className="flex w-screen h-[93vh] md:h-screen  bg-black text-gray-300 overflow-hidden">
         {/* flex hataye hai */}
-        <div className="hidden md:flex w-70 h-screen flex-col bg-linear-to-b from-slate-950 via-slate-900 to-black border-r border-white/10">
+        <div className="hidden md:flex w-70 h-screen flex-col bg-linear-to-b from-slate-150 via-slate-900 to-black border-r border-white/10">
           {/* PROFILE */}
           <div className="px-6 py-8 flex flex-col items-center border-b border-white/10">
             <div className="relative">
-              <div className="absolute inset-0 rounded-2xl bg-cyan-400 blur-xl opacity-20"></div>
+              <div className="absolute inset-0 rounded-2xl bg-cyan-100 blur-xl opacity-20"></div>
               <img
                 src={profile_image}
-                className="relative w-24 h-24 rounded-2xl object-cover border border-slate-700"
+                className="relative w-24 h-24 rounded-2xl object-cover border border-slate-100"
                 alt="profile"
               />
             </div>
 
-            <h2 className="mt-4 text-xl font-extrabold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-amber-400 to-orange-500">
+            <h2 className="mt-4 text-xl font-extrabold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-amber-500 to-orange-800">
               Laxman Kumar
             </h2>
 
-            <p className="text-xs text-gray-400 mt-1">
+            <p className="text-xs text-gray-100 mt-1">
               Full Stack / React Developer
             </p>
           </div>

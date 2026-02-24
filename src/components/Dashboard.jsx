@@ -41,10 +41,10 @@ const Dashboard = () => {
 
   return (
     <>
-    <section className="relative overflow-hidden bg-slate-950 text-white py-10 md:min-h-screen flex items-center px-6 md:px-16">
+    <section className="relative overflow-hidden bg-black text-white py-10 md:min-h-screen flex items-center px-6 md:px-16">
       {/* background glow blobs */}
-      <div className="pointer-events-none absolute -top-40 -left-40 w-130 h-130 bg-cyan-500/20 blur-3xl rounded-full animate-pulse" />
-      <div className="pointer-events-none absolute -bottom-40 -right-40 w-130 h-130 bg-blue-500/20 blur-3xl rounded-full animate-pulse" />
+      <div className="pointer-events-none absolute -top-40 -left-40 w-130 h-130 bg-cyan-100/20 blur-3xl rounded-full animate-pulse" />
+      <div className="pointer-events-none absolute -bottom-40 -right-40 w-130 h-130 bg-blue-100/20 blur-3xl rounded-full animate-pulse" />
 
       {/* dotted grid overlay */}
       <div className="pointer-events-none absolute inset-0 opacity-30">
@@ -55,12 +55,12 @@ const Dashboard = () => {
         {/* LEFT CONTENT */}
         <div className="space-y-6">
           {/* badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-300/20 bg-white/5 backdrop-blur">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-300/20 bg-white/5 backdrop-blur">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
             <p className="text-sm text-slate-200/90">
               Available for opportunities • Ranchi, Jharkhand
             </p>
-          </div>
+          </div> */}
 
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
             Hi, I'm{" "}
@@ -89,7 +89,7 @@ const Dashboard = () => {
             {["React", "Node.js", "MongoDB", "Express", "Tailwind", "Git"].map((t) => (
               <span
                 key={t}
-                className="px-3 py-1 rounded-full text-sm border border-slate-700/70 bg-slate-900/40 text-slate-200 hover:border-cyan-400/40 transition"
+                className="px-3 py-1 rounded text-md border border-slate-700/70 bg-slate-900/40 text-slate-200 hover:border-cyan-400/40 transition"
               >
                 {t}
               </span>
@@ -98,17 +98,17 @@ const Dashboard = () => {
 
           {/* HIGHLIGHTS */}
           <div className="grid grid-cols-2 gap-4 pt-2">
-            <div className="group bg-slate-900/50 border border-slate-700/60 rounded-2xl p-4 hover:-translate-y-1 transition shadow-lg">
+            <div className="group bg-slate-900/50 border border-slate-700/60 rounded p-4 hover:-translate-y-1 transition shadow-lg">
               <div className="absolute opacity-0 group-hover:opacity-100 transition pointer-events-none" />
               <h3 className="text-3xl font-bold text-cyan-300">10+</h3>
               <p className="text-slate-300/70">Projects Completed</p>
-              <div className="mt-3 h-0.5 w-10 bg-cyan-400/40 rounded-full group-hover:w-16 transition-all" />
+              {/* <div className="mt-3 h-0.5 w-10 bg-cyan-400/40 rounded-full group-hover:w-16 transition-all" /> */}
             </div>
 
-            <div className="group bg-slate-900/50 border border-slate-700/60 rounded-2xl p-4 hover:-translate-y-1 transition shadow-lg">
+            <div className="group bg-slate-900/50 border border-slate-700/60 rounded p-4 hover:-translate-y-1 transition shadow-lg">
               <h3 className="text-3xl font-bold text-cyan-300">1+</h3>
               <p className="text-slate-300/70">Internships</p>
-              <div className="mt-3 h-0.5 w-10 bg-cyan-400/40 rounded-full group-hover:w-16 transition-all" />
+              {/* <div className="mt-3 h-0.5 w-10 bg-cyan-400/40 rounded-full group-hover:w-16 transition-all" /> */}
             </div>
           </div>
 

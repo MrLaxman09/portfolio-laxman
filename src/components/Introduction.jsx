@@ -3,30 +3,30 @@ import { Briefcase, Brain, Package, MapPin, Home, Target } from "lucide-react";
 
 const Introduction = () => {
   return (
-    <section className="relative overflow-hidden py-12 px-4 md:px-16 text-white">
+    <section className="relative overflow-hidden h-full bg-black py-12 px-4 md:px-16 text-white">
       {/* background accents */}
-      <div className="pointer-events-none absolute -top-24 -left-24 w-[420px] h-[420px] bg-cyan-500/15 blur-3xl rounded-full" />
-      <div className="pointer-events-none absolute -bottom-24 -right-24 w-[420px] h-[420px] bg-blue-500/10 blur-3xl rounded-full" />
+      <div className="pointer-events-none absolute -top-24 -left-24 w-105 h-105 bg-cyan-500/15 blur-3xl rounded-full" />
+      <div className="pointer-events-none absolute -bottom-24 -right-24 w-105 h-105 bg-blue-500/10 blur-3xl rounded-full" />
 
       <div className="max-w-6xl mx-auto">
         {/* heading */}
         <div className="mb-10">
-          <p className="text-sm tracking-widest text-slate-400 uppercase">About</p>
+          <p className="text-sm tracking-widest text-slate-200 uppercase">About</p>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             <span className="text-cyan-300">Overview</span>
             <span className="text-slate-200"> & Introduction</span>
           </h1>
-          <div className="mt-4 h-[2px] w-24 bg-cyan-400/40 rounded-full" />
+          {/* <div className="mt-4 h-[2px] w-24 bg-cyan-400/40 rounded-full" /> */}
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* SUMMARY (left big card) */}
           <div className="lg:col-span-1">
             <div className="relative rounded-3xl border border-slate-700/60 bg-slate-900/40 backdrop-blur p-6 shadow-xl">
-              <div className="absolute -inset-[2px] rounded-3xl bg-gradient-to-br from-cyan-400/20 via-transparent to-blue-500/10 blur-md opacity-70" />
+              <div className="absolute -inset-0.5 rounded-3xl bg-linear-to-br from-cyan-100/20 via-transparent to-blue-500/10 blur-md opacity-70" />
               <div className="relative">
-                <h2 className="text-lg font-semibold text-slate-100">Quick Summary</h2>
-                <p className="mt-4 text-slate-300/85 leading-relaxed">
+                <h2 className="text-lg font-semibold text-slate-100">Profile Summary</h2>
+                <p className="mt-4 text-slate-200/85 leading-relaxed">
                   I am <span className="text-white font-semibold">Laxman Kumar</span>, a
                   passionate and detail-oriented developer focused on building modern,
                   scalable, and user-friendly web applications. My work spans across
@@ -39,7 +39,7 @@ const Introduction = () => {
                   {["React", "Node", "MongoDB", "Tailwind", "APIs"].map((t) => (
                     <span
                       key={t}
-                      className="px-3 py-1 rounded-full text-xs border border-slate-700/70 bg-slate-950/40 text-slate-200"
+                      className="px-3 py-1 rounded text-xs border border-slate-700/70 bg-slate-150/40 text-slate-200"
                     >
                       {t}
                     </span>
@@ -93,19 +93,19 @@ const InfoCard = ({ icon, title, desc }) => {
   return (
     <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/35 backdrop-blur p-5 shadow-lg hover:-translate-y-1 transition">
       {/* hover glow */}
-      <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition bg-gradient-to-br from-cyan-400/12 via-transparent to-blue-500/12" />
+      <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition bg-linear-to-br from-cyan-400/12 via-transparent to-blue-500/12" />
 
       <div className="relative flex gap-3">
-        <div className="mt-0.5 w-9 h-9 rounded-xl border border-cyan-300/20 bg-cyan-400/10 text-cyan-200 flex items-center justify-center">
+        <div className="mt-0.5 w-9 h-9 rounded-xl border border-cyan-300/20 bg-cyan-400/10 text-cyan-100 flex items-center justify-center">
           {icon}
         </div>
 
         <div>
           <h3 className="text-cyan-300 font-semibold">{title}</h3>
-          <p className="mt-1 text-slate-300/80 text-sm leading-relaxed">{desc}</p>
+          <p className="mt-1 text-slate-100/80 text-sm leading-relaxed">{desc}</p>
 
           {/* underline accent */}
-          <div className="mt-3 h-[2px] w-10 bg-cyan-400/35 rounded-full group-hover:w-16 transition-all" />
+          {/* <div className="mt-3 h-[2px] w-10 bg-cyan-400/35 rounded-full group-hover:w-16 transition-all" /> */}
         </div>
       </div>
     </div>

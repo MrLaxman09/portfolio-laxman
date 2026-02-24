@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const ProfileHeroImage = ({ first_image }) => {
   const fullText = "Laxman Kumar";
@@ -26,10 +26,10 @@ const ProfileHeroImage = ({ first_image }) => {
   }, [i, deleting]);
 
   // random subtle tilt on hover via CSS only (no libs)
-  const zigZagId = useMemo(
-    () => "zigzag-" + Math.random().toString(16).slice(2),
-    []
-  );
+  // const zigZagId = useMemo(
+  //   () => "zigzag-" + Math.random().toString(16).slice(2),
+  //   []
+  // );
 
   return (
     <div className="flex justify-center relative">
