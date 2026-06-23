@@ -2,13 +2,6 @@ import React from "react";
 
 const projects = [
   {
-    title: "BUYOU E-Commerce Platform",
-    description:
-      "A full-stack MERN e-commerce application with authentication, product categories, cart system, and admin dashboard.",
-    tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    link: "https://ecommerce-frontend-8qb7.onrender.com/", // baad me live link dal dena
-  },
-  {
     title: "Chef Booking Web Application",
     description:
       "Django-based platform to book professional chefs for events with scheduling, pricing, and profile management.",
@@ -16,11 +9,32 @@ const projects = [
     link: "https://chef-booking-backend-project.onrender.com/",
   },
   {
+    title: "News Blog Website",
+    description:
+      "Built a full-stack SEO-ready news platform with Next.js, React, MongoDB, admin panel, CRUD, Cloudinary uploads, search, and SSR.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+    link: "https://localnewsrnc24.netlify.app/",
+  },
+  {
+    title: "BUYOU E-Commerce Platform",
+    description:
+      "A full-stack MERN e-commerce application with authentication, product categories, cart system, and admin dashboard.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+    link: "https://ecommerce-frontend-8qb7.onrender.com/", // baad me live link dal dena
+  },
+  {
+    title: "Training & Placement Management System",
+    description:
+      "Connect with top companies, get trained, and land your dream job through our smart placement system.",
+    tech: ["React", "REST API", "Node", "Tailwind", "MongoDB"],
+    link: "https://tnprkdf.netlify.app/",
+  },
+  {
     title: "AgriTech Web Application",
     description:
       "Smart agriculture platform providing real-time weather data, crop recommendations, and marketplace features.",
     tech: ["Django", "REST API", "OpenWeather API", "Bootstrap"],
-    link: "#",
+    link: "https://github.com/MrLaxman09/Agrisoil-backend-project",
   },
 ];
 
